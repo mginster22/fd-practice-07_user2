@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+.card-section {
+    --main-color: #3b9e3e;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: inline-block;
+    --img-size: 100px;
+    min-width: calc(3*var(--img-size));
+    width: 100%;
+    max-width: calc(4*var(--img-size));
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    font-family: sans-serif;
+}
+.card-wrapper + .card-wrapper{
+    margin-left: 10px;
+}
+.card-bg-section {
+    height: calc(1.7*var(--img-size));
+    background-image:url(../icons/Без\ названия\ \(3\).png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.title-bg{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.card-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: calc(0.5*var(--img-size)*-1);
+}
+.photo {
+    box-sizing: border-box;
+    width: var(--img-size);
+    height: var(--img-size);
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+    object-position: center;
+}
+.full-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.format-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+}
+
+.btn-wrapper {
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.btn {
+    padding: 1%;
+    border: none;
+    border-radius: 5%;
+    background-color: var(--main-color);
+    color: black;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.7;
+    color: wheat;
+}
+
+.follow-btn {
+    width: 20%;
+}
+
+.send-btn {
+    width: 40%;
+}
+
+.info-user {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-wrapper {
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+.footer-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    opacity: 0.7;
+}
+
+.twitter {
+    background-image: url(../icons/twitter.png);
+}
+
+.google {
+    background-image: url(../icons/google-plus.png);
+}
+
+.facebook {
+    background-image: url(../icons/facebook.png);
+}
