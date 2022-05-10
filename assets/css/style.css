@@ -24,14 +24,13 @@ body {
     width: 100%;
     max-width: calc(4*var(--img-size));
     margin-top: 10px;
+    margin-left: 10px;
     text-align: center;
     border: 1px solid var(--main-color);
     text-align: center;
     font-family: sans-serif;
 }
-.card-wrapper + .card-wrapper{
-    margin-left: 10px;
-}
+
 .card-bg-section {
     height: calc(1.7*var(--img-size));
     background-image:url(../icons/Без\ названия\ \(3\).png);
