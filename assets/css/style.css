@@ -105,7 +105,7 @@ body {
 .info-user {
     width: 100%;
     height: calc(1.2*var(--img-size));
-    padding-top: 20px;
+    margin-top: 20px;
     padding-bottom: 20px;
     
     overflow: auto;
